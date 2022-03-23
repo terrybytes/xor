@@ -18,7 +18,7 @@ If FILE is not specified, or if FILE is "-", read standard input.
   -v --version    output version information and exit
 
 Based on the idea of a one-time pad (https://en.wikipedia.org/wiki/One-time_pad),
-xor uses a hashing function to generate a pad from a supplied key
+xor uses a hashing function (sha3) to generate a pad from a supplied key
 (or keys). A unique nonce (ok, 32 bits unique) (https://en.wikipedia.org/wiki/Cryptographic_nonce)
 is used for each encryption operation.
 Please direct inquiries, bug reports, etc. to xor@terrybytes.io.
