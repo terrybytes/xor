@@ -19,17 +19,19 @@ If FILE is not specified, or if FILE is "-", read standard input.
 
 Based on the idea of a one-time pad (https://en.wikipedia.org/wiki/One-time_pad),
 xor uses a hashing function to generate a pad from a supplied key
-(or keys). A unique nonce (https://en.wikipedia.org/wiki/Cryptographic_nonce)
+(or keys). A unique nonce (ok, 32 bits unique) (https://en.wikipedia.org/wiki/Cryptographic_nonce)
 is used for each encryption operation.
 Please direct inquiries, bug reports, etc. to xor@terrybytes.io.
 
 ```
 
 
-note that the output is binary so be sure to redirect stdout
+Note that the output is binary so be sure to redirect stdout
 
 Example usage:
 
 date | xor --key=123 | xor -d --key=123
+
+It is hoped that this is not too naive an implmentation. Performance wise it seems to do ok, using as many as 16 cores w/a constant memory footprint and supporting a seemingly arbitrary data set size. Feedback welcome. Be safe.
 
 
