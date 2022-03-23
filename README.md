@@ -14,14 +14,15 @@ If FILE is not specified, or if FILE is "-", read standard input.
                   If not supplied, xor will attempt to use the env var: "XOR_KEY".
                   Note more than one "--key=" arg can supplied on the command
                   line and their ordering is not significant.
-  --help          display this help and exit
-  --version       output version information and exit
+  -h --help       display this help and exit
+  -v --version    output version information and exit
 
 Based on the idea of a one-time pad (https://en.wikipedia.org/wiki/One-time_pad),
-xor uses a cryptographic hashing function to generate a pad from a supplied key
+xor uses a hashing function to generate a pad from a supplied key
 (or keys). A unique nonce (https://en.wikipedia.org/wiki/Cryptographic_nonce)
 is used for each encryption operation.
 Please direct inquiries, bug reports, etc. to xor@terrybytes.io.
+
 ```
 
 
