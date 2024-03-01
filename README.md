@@ -23,7 +23,7 @@ is used for each encryption operation.
 Please direct inquiries, bug reports, etc. to xor@terrybytes.io.
 ```
 
-By default, xor will use all the cpu cores available to it. this can be limited by setting GOMAXPROCS to some smaller number. xor can encrypt data steams of any size (apparently) and it's memory use is constant. xor seems to be very similar to the chacha20 cypher. xor also seem to perform pretty well; 1.5s/1G on an 8-core system.
+By default, xor will use all the cpu cores available to it. This can be limited by setting GOMAXPROCS to some smaller number. xor can encrypt data steams of any size (apparently) and it's memory use is constant. xor also seems to perform pretty well; 1.5s/1G on an 8-core system.
 
 note that the output is binary so be sure to redirect stdout
 
